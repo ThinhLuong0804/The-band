@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #ccc; */
+}
+
+/* Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: #000;
+  height: 46px;
+}
+
+#nav {
+  list-style: none;
+  display: inline-block;
+}
+
+#nav li {
+  display: inline-block;
+  position: relative;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 46px;
+  display: block;
+  padding: 0 24px;
+
+  text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav li:hover > a {
+  background-color: #ccc;
+  cursor: pointer;
+  color: #000;
+}
+
+.subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+}
+
+#nav .subnav li {
+  display: block;
+}
+
+/* bình thường thì sử dụng #nav .subnav li a để làm, còn ở đây thử thuộc tính !important*/
+.subnav li a {
+  /* display: inline-block; */
+  /*thằng nav li a nó có tính đặc hiệu mạnh hơn này nên phải thêm important vào*/
+  color: #000 !important;
+  padding: 0 50px 0 12px !important;
+  text-transform: capitalize !important;
+  line-height: 38px !important;
+}
+
+.subnav i {
+  color: #fff;
+}
+
+/* search */
+#search {
+  float: right;
+  padding: 0 23px;
+}
+
+#search:hover {
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+#search .search-icon {
+  color: #fff;
+  line-height: 46px;
+  font-size: 16px;
+}
+
+/* Slider */
+#slider-bar {
+  margin-top: 46px;
+  /* khi set padding 50% thì có nghĩa nó bằng 20% width */
+  /* padding-top: 50%; */
+
+  /* cách 2 là xài aspect ratio */
+  aspect-ratio: 2 / 1;
+}
