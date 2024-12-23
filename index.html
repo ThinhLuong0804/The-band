@@ -16,10 +16,10 @@
       <div id="header">
         <!-- Nav -->
         <ul id="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">Band</a></li>
-          <li><a href="">Tour</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="band">Band</a></li>
+          <li><a href="#" id="tour">Tour</a></li>
+          <li><a href="#" id="contact">Contact</a></li>
           <li>
             <a href=""
               >More
@@ -36,17 +36,207 @@
 
         <!-- Begin Seach -->
         <div id="search">
-          <i class="search-icon fa-solid fa-magnifying-glass"></i>
+          <!-- <i class="search-icon fa-solid fa-magnifying-glass"></i> -->
+          <i class="search-icon fa-brands fa-itunes-note"></i>
         </div>
         <!-- End Search -->
       </div>
       <!-- End Header -->
 
-      <div id="slider-bar"></div>
+      <div id="slider-bar">
+        <div class="slides">
+          <div
+            class="slide"
+            style="
+              background-image: url('asset/images/slider/Screenshot 2024-12-20 115513.png');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('asset/images/slider/Screenshot 2024-12-20 115422.png');
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url('asset/images/slider/Screenshot 2024-12-20 114655.png');
+            "
+          ></div>
+        </div>
 
-      <div id="content"></div>
+        <!-- Buttons -->
+        <button class="slider-btn prev-btn">❮</button>
+        <button class="slider-btn next-btn">❯</button>
+      </div>
+
+      <!-- Content -->
+      <div id="content">
+        <!-- About Section -->
+        <div class="content-section content-band">
+          <h2 class="section-heading">Bụi band</h2>
+
+          <p class="section-sub-heading">We love music</p>
+
+          <p class="about-text">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ase
+          </p>
+
+          <div class="members-list">
+            <div class="members-item">
+              <p class="member-name">Name</p>
+              <img
+                class="member-img"
+                src="./asset/images/band/bandmember.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="members-item">
+              <p class="member-name">Name</p>
+              <img
+                class="member-img"
+                src="./asset/images/band/bandmember.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="members-item">
+              <p class="member-name">Name</p>
+              <img
+                class="member-img"
+                src="./asset/images/band/bandmember.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- End About Section -->
+
+        <!-- Tour Section -->
+         <div class="tour-section">
+          <div class="content-section content-tour">
+            <h2 class="section-heading">TOUR DATES</h2>
+            <p class="section-sub-heading">Remember to book your tickets!</p>
+            
+            <!-- Tickets -->
+            <ul class="tickets-list">
+              <li>September<span class="sold-out">Sold out</span></li>
+              <li>Octorber<span class="sold-out">Sold out</span></li>
+              <li>November <span class="quantity">3</span></li>
+            </ul>
+  
+            <!-- Places -->
+            <div class="places-list">
+              <div class="place-item">
+                <img src="./asset/images/tour/Pullman-Vung-Tau.jpg" alt="Pullman-Vung-Tau" class="place-img">
+                <div class="place-body">
+                  <h3 class="place-heading">Vũng Tàu</h3>
+                  <p class="place-time">Fri 26 June 2019</p>
+                  <p class="place-desc">Khách sạn Pullman cùng Creative Station</p>
+                  <button class="place-buy-btn">Show</button>
+                </div>
+              </div>
+
+              <div class="place-item">
+                <img src="./asset/images/tour/2024-06-17.jpg" alt="Cafe Mộc" class="place-img">
+                <div class="place-body">
+                  <h3 class="place-heading">Bạc Liêu</h3>
+                  <p class="place-time">Fri 26 June 2024</p>
+                  <p class="place-desc">Cafe Mộc hẻm Trần Phú</p>
+                  <button class="place-buy-btn">Show</button>
+                </div>
+              </div>
+
+              <div class="place-item">
+                <img src="./asset/images/tour/Vinpearl-Resort-Spa-Hạ-Long-ivivu.jpg" alt="Vinpearl-Resort-Spa-Hạ-Long" class="place-img">
+                <div class="place-body">
+                  <h3 class="place-heading">Vịnh Hạ Long</h3>
+                  <p class="place-time">Fri 26 June 2019</p>
+                  <p class="place-desc">Team Building cùng ACB</p>
+                  <button class="place-buy-btn">Show</button>
+                </div>
+              </div>
+
+            <div class="clear"></div>
+
+
+            </div>
+          </div>
+         </div>
+        <!-- End Tour Section -->
+
+        <!-- Contact Section -->
+        <div class="content-section content-contact">
+          <h2 class="section-heading">Contact</h2>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+          <div class="info">
+            
+          </div>
+          <div class="form"></div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      
+    </div>
 
       <div id="footer"></div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal-layout">
+      <div class="modal-container">
+        <div class="modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+        <div class="modal-header">
+          <i class="icon-envelope fa-solid fa-envelope"></i>
+          <h2>Tickets</h2>
+        </div>
+        
+        <div class="modal-body">
+          <label for="" class="modal-label">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Tickets, $15 per person
+          </label>
+
+          <input type="text" name="" id="tickets-input" placeholder="How many?">
+
+          <label for="" class="modal-label">
+            
+            <i class="fa-solid fa-user"></i>
+            Send to
+          </label>
+
+          <input type="email" name="" id="tickets-input" placeholder="Email">
+
+          <button id="buy-tickets">
+            PAY <i class="fa-solid fa-check"></i>
+          </button>
+        </div>
+        
+        <footer class="modal-footer">
+          Need <a href="">help</a>
+        </footer>        
+      </div>
+    </div>
+    <!-- End Modal -->
+    <script src="./asset/javascript/slider.js"></script>
+    <script src="./asset/javascript/scrollTo.js"></script>
+    <script src="./asset/javascript/button-show.js"></script>
   </body>
 </html>
