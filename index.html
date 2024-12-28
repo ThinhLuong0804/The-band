@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bụi Band</title>
+    <link rel="icon" href="asset/images/band/1175795.png" type="image/x-icon" />
     <link rel="stylesheet" href="./asset/css/styles.css" />
     <link
       rel="stylesheet"
@@ -92,8 +93,8 @@
             ase
           </p>
 
-          <div class="members-list">
-            <div class="members-item">
+          <div class="row members-list">
+            <div class="col col-3 members-item text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -102,7 +103,7 @@
               />
             </div>
 
-            <div class="members-item">
+            <div class="col col-3 members-item text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -111,7 +112,7 @@
               />
             </div>
 
-            <div class="members-item">
+            <div class="col col-3 members-item text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -126,74 +127,164 @@
         <!-- End About Section -->
 
         <!-- Tour Section -->
-         <div class="tour-section">
+        <div class="tour-section">
           <div class="content-section content-tour">
             <h2 class="section-heading">TOUR DATES</h2>
             <p class="section-sub-heading">Remember to book your tickets!</p>
-            
+
             <!-- Tickets -->
             <ul class="tickets-list">
               <li>September<span class="sold-out">Sold out</span></li>
               <li>Octorber<span class="sold-out">Sold out</span></li>
               <li>November <span class="quantity">3</span></li>
             </ul>
-  
+
             <!-- Places -->
-            <div class="places-list">
-              <div class="place-item">
-                <img src="./asset/images/tour/Pullman-Vung-Tau.jpg" alt="Pullman-Vung-Tau" class="place-img">
+            <div class="row places-list">
+              <div class="col col-3">
+                <img
+                  src="./asset/images/tour/Pullman-Vung-Tau.jpg"
+                  alt="Pullman-Vung-Tau"
+                  class="place-img"
+                />
                 <div class="place-body">
                   <h3 class="place-heading">Vũng Tàu</h3>
                   <p class="place-time">Fri 26 June 2019</p>
-                  <p class="place-desc">Khách sạn Pullman cùng Creative Station</p>
-                  <button class="place-buy-btn">Show</button>
+                  <p class="place-desc">
+                    Khách sạn Pullman cùng Creative Station
+                  </p>
+                  <button class="btn">Show</button>
                 </div>
               </div>
 
-              <div class="place-item">
-                <img src="./asset/images/tour/2024-06-17.jpg" alt="Cafe Mộc" class="place-img">
+              <div class="col col-3">
+                <img
+                  src="./asset/images/tour/2024-06-17.jpg"
+                  alt="Cafe Mộc"
+                  class="place-img"
+                />
                 <div class="place-body">
                   <h3 class="place-heading">Bạc Liêu</h3>
                   <p class="place-time">Fri 26 June 2024</p>
                   <p class="place-desc">Cafe Mộc hẻm Trần Phú</p>
-                  <button class="place-buy-btn">Show</button>
+                  <button class="btn">Show</button>
                 </div>
               </div>
 
-              <div class="place-item">
-                <img src="./asset/images/tour/Vinpearl-Resort-Spa-Hạ-Long-ivivu.jpg" alt="Vinpearl-Resort-Spa-Hạ-Long" class="place-img">
+              <div class="col col-3">
+                <img
+                  src="./asset/images/tour/Vinpearl-Resort-Spa-Hạ-Long-ivivu.jpg"
+                  alt="Vinpearl-Resort-Spa-Hạ-Long"
+                  class="place-img"
+                />
                 <div class="place-body">
                   <h3 class="place-heading">Vịnh Hạ Long</h3>
                   <p class="place-time">Fri 26 June 2019</p>
                   <p class="place-desc">Team Building cùng ACB</p>
-                  <button class="place-buy-btn">Show</button>
+                  <button class="btn">Show</button>
                 </div>
               </div>
 
-            <div class="clear"></div>
-
-
+              <div class="clear"></div>
             </div>
           </div>
-         </div>
+        </div>
         <!-- End Tour Section -->
 
         <!-- Contact Section -->
-        <div class="content-section content-contact">
+        <div class="contact-section content-section">
           <h2 class="section-heading">Contact</h2>
           <p class="section-sub-heading">Fan? Drop a note!</p>
-          <div class="info">
-            
+
+          <div class="row content-contact">
+            <div class="col col-2 contact-info">
+              <p><i class="fa-solid fa-location-dot"></i>Bac Lieu - Vietnam</p>
+              <p><i class="fa-solid fa-phone"></i>Phone: +84 706882</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i>Email: buiband@gmail.com
+              </p>
+            </div>
+
+            <div class="col col-2 contact-form">
+              <form action="">
+                <div class="row mt-8">
+                  <div class="col col-2">
+                    <input
+                      type="text"
+                      name=""
+                      required
+                      placeholder="Name"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col col-2">
+                    <input
+                      type="email"
+                      name=""
+                      required
+                      placeholder="Email"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <div class="row mt-8">
+                  <div class="col col-full">
+                    <input
+                      type="text"
+                      name=""
+                      required
+                      placeholder="Message"
+                      id=""
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <input
+                  class="btn mt-16 pull-right"
+                  type="submit"
+                  value="SEND"
+                />
+              </form>
+            </div>
           </div>
-          <div class="form"></div>
         </div>
+        <!-- End Contact Section -->
       </div>
+      <!-- End Content -->
 
-      <!-- Contact Section -->
-      
-    </div>
+      <!-- Map -->
+      <div class="map-section">
+        <img src="./asset/images/map/map.jpg" alt="Map" />
+      </div>
+      <!-- End Map -->
 
-      <div id="footer"></div>
+      <!-- Footer -->
+      <div id="footer">
+        <div class="social">
+          <a href="https://www.facebook.com/thinh.luong.1088/">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="https://www.instagram.com/htijnh.ulowng.8420/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.threads.net/@htijnh.ulowng.8420?xmt=AQGzUD4YdK7F7eASH7Zq1cifn_pYl4OcWfGRouqrKjojwEU"
+          >
+            <i class="fa-brands fa-threads"></i>
+          </a>
+        </div>
+        <p>
+          Powered by
+          <a href="https://www.facebook.com/thinh.luong.1088/">Thinh Luong</a>
+        </p>
+      </div>
+      <!-- End Footer -->
     </div>
 
     <!-- Modal -->
@@ -202,36 +293,38 @@
         <div class="modal-close">
           <i class="fa-solid fa-xmark"></i>
         </div>
-        
+
         <div class="modal-header">
           <i class="icon-envelope fa-solid fa-envelope"></i>
           <h2>Tickets</h2>
         </div>
-        
+
         <div class="modal-body">
           <label for="" class="modal-label">
             <i class="fa-solid fa-cart-shopping"></i>
             Tickets, $15 per person
           </label>
 
-          <input type="text" name="" id="tickets-input" placeholder="How many?">
+          <input
+            type="text"
+            name=""
+            id="tickets-input"
+            placeholder="How many?"
+          />
 
           <label for="" class="modal-label">
-            
             <i class="fa-solid fa-user"></i>
             Send to
           </label>
 
-          <input type="email" name="" id="tickets-input" placeholder="Email">
+          <input type="email" name="" id="tickets-input" placeholder="Email" />
 
           <button id="buy-tickets">
             PAY <i class="fa-solid fa-check"></i>
           </button>
         </div>
-        
-        <footer class="modal-footer">
-          Need <a href="">help</a>
-        </footer>        
+
+        <footer class="modal-footer">Need <a href="">help</a></footer>
       </div>
     </div>
     <!-- End Modal -->

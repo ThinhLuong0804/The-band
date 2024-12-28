@@ -10,8 +10,68 @@ body {
   /* background-color: #ccc; */
 }
 
+/* common */
 .clear {
   clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.col {
+  float: left;
+  padding: 0 8px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: calc((100% / 3));
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.pull-right {
+  float: right;
 }
 
 /* Header */
@@ -165,7 +225,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  padding: 64px 0;
+  padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -200,11 +260,11 @@ body {
   /* overflow: hidden; */
 }
 
-#content .members-item {
+/* #content .members-item {
   float: left;
   width: calc(100% / 3);
   text-align: center;
-}
+} */
 
 #content .member-name {
   font-size: 15px;
@@ -262,15 +322,13 @@ body {
 /* Place Tour */
 .places-list {
   margin-top: 32px;
-  margin-left: -8px;
-  margin-right: -8px;
 }
 
-.place-item {
+/* .place-item {
   padding: 0 8px;
   float: left;
   width: calc(100% / 3);
-}
+} */
 
 .place-img {
   width: 100%;
@@ -301,21 +359,6 @@ body {
   color: #000;
   min-height: 70px;
   padding: 15px 0;
-}
-
-.place-buy-btn {
-  display: inline-block;
-  padding: 8px 16px;
-  margin-bottom: 10px;
-
-  text-decoration: none;
-  color: #fff;
-  background-color: #000;
-}
-
-.place-buy-btn:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 /* Modal */
@@ -432,4 +475,68 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Contact */
+.content-contact {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* i[class*= ] ý là thẻ i có class có kí tự ... */
+.contact-info i[class*="fa-"] {
+  width: 30px;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-submit-btn {
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+
+  padding: 8px 16px;
+  float: right;
+}
+
+/* Map Section */
+.map-section img {
+  width: 100%;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  margin: 64px 16px;
+}
+
+#footer .social a {
+  padding: 0 1px;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+#footer p {
+  margin: 15px 0;
+  color: #757575;
+  font-size: 15px;
+}
+
+#footer a {
+  color: #757575;
+  font-size: 15px;
 }

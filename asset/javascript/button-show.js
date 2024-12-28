@@ -1,7 +1,7 @@
 const modal = document.querySelector(".modal-layout");
 const modalClose = document.querySelector(".modal-close");
 const modalContainer = document.querySelector(".modal-container");
-const buttonShow = document.querySelectorAll(".place-buy-btn");
+const buttonShow = document.querySelectorAll(".places-list .btn");
 for (const btnShow of buttonShow) {
   btnShow.addEventListener("click", (e) => {
     modal.classList.add("open");
