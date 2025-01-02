@@ -10,11 +10,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="./asset/css/responsive.css" />
   </head>
   <body>
     <div id="main">
       <!-- Header -->
       <div id="header">
+        <!-- Mobile Bars -->
+        <div class="mobile-bars">
+          <i class="bar-icon fa-solid fa-bars"></i>
+        </div>
+        <!-- End Mobile Bars -->
+
         <!-- Nav -->
         <ul id="nav">
           <li><a href="#" id="home">Home</a></li>
@@ -22,7 +29,7 @@
           <li><a href="#" id="tour">Tour</a></li>
           <li><a href="#" id="contact">Contact</a></li>
           <li>
-            <a href=""
+            <a href="#"
               >More
               <i class="fa-solid fa-caret-down"></i>
             </a>
@@ -44,6 +51,7 @@
       </div>
       <!-- End Header -->
 
+      <!-- Side Bar -->
       <div id="slider-bar">
         <div class="slides">
           <div
@@ -70,6 +78,7 @@
         <button class="slider-btn prev-btn">❮</button>
         <button class="slider-btn next-btn">❯</button>
       </div>
+      <!-- End Side Bar -->
 
       <!-- Content -->
       <div id="content">
@@ -94,7 +103,7 @@
           </p>
 
           <div class="row members-list">
-            <div class="col col-3 members-item text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -103,7 +112,7 @@
               />
             </div>
 
-            <div class="col col-3 members-item text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -112,7 +121,7 @@
               />
             </div>
 
-            <div class="col col-3 members-item text-center">
+            <div class="col col-3 s-col-full mt-32 text-center">
               <p class="member-name">Name</p>
               <img
                 class="member-img"
@@ -141,7 +150,7 @@
 
             <!-- Places -->
             <div class="row places-list">
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-full">
                 <img
                   src="./asset/images/tour/Pullman-Vung-Tau.jpg"
                   alt="Pullman-Vung-Tau"
@@ -153,11 +162,11 @@
                   <p class="place-desc">
                     Khách sạn Pullman cùng Creative Station
                   </p>
-                  <button class="btn">Show</button>
+                  <button class="btn s-full-width text-center">Show</button>
                 </div>
               </div>
 
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-full">
                 <img
                   src="./asset/images/tour/2024-06-17.jpg"
                   alt="Cafe Mộc"
@@ -167,11 +176,11 @@
                   <h3 class="place-heading">Bạc Liêu</h3>
                   <p class="place-time">Fri 26 June 2024</p>
                   <p class="place-desc">Cafe Mộc hẻm Trần Phú</p>
-                  <button class="btn">Show</button>
+                  <button class="btn s-full-width text-center">Show</button>
                 </div>
               </div>
 
-              <div class="col col-3">
+              <div class="col col-3 mt-16 s-col-full">
                 <img
                   src="./asset/images/tour/Vinpearl-Resort-Spa-Hạ-Long-ivivu.jpg"
                   alt="Vinpearl-Resort-Spa-Hạ-Long"
@@ -181,7 +190,7 @@
                   <h3 class="place-heading">Vịnh Hạ Long</h3>
                   <p class="place-time">Fri 26 June 2019</p>
                   <p class="place-desc">Team Building cùng ACB</p>
-                  <button class="btn">Show</button>
+                  <button class="btn s-full-width text-center">Show</button>
                 </div>
               </div>
 
@@ -197,7 +206,7 @@
           <p class="section-sub-heading">Fan? Drop a note!</p>
 
           <div class="row content-contact">
-            <div class="col col-2 contact-info">
+            <div class="col col-2 s-col-full contact-info">
               <p><i class="fa-solid fa-location-dot"></i>Bac Lieu - Vietnam</p>
               <p><i class="fa-solid fa-phone"></i>Phone: +84 706882</p>
               <p>
@@ -205,10 +214,10 @@
               </p>
             </div>
 
-            <div class="col col-2 contact-form">
+            <div class="col col-2 s-col-full contact-form s-mt-16">
               <form action="">
                 <div class="row mt-8">
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full">
                     <input
                       type="text"
                       name=""
@@ -218,7 +227,7 @@
                       class="form-control"
                     />
                   </div>
-                  <div class="col col-2">
+                  <div class="col col-2 s-col-full s-mt-16">
                     <input
                       type="email"
                       name=""
@@ -244,7 +253,7 @@
                 </div>
 
                 <input
-                  class="btn mt-16 pull-right"
+                  class="btn mt-16 pull-right s-full-width"
                   type="submit"
                   value="SEND"
                 />
